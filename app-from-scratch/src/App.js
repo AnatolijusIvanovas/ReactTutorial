@@ -39,12 +39,26 @@ function UserInfo(props) {
 	);
 }
 
+class Clock extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {date: new Date()};
+	}
+	
+	render() {
+		return (
+			<div>
+				<h3>It is {this.state.date.toLocaleTimeString()}.</h3>
+			</div>
+		);
+	}
+}
+
 function App() {
 	return (
 		<div>
-			<Welcome name="John" />
-			<Welcome name="Jack" />
-			<Welcome name="Josh" />
+			<Welcome name="John Doe" />
+			<Clock />
 		</div>
 	);
 }
