@@ -76,6 +76,8 @@ function App() {
 		<div>
 			<Welcome name="John Doe" />
 			<Clock />
+			<Clock />
+			<Clock />
 		</div>
 	);
 }
