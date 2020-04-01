@@ -5,10 +5,14 @@ function Welcome(props) {
 	return <h3> Hello, {props.name}</h3>
 }
 
-const element = <Welcome name="John Doe" />
-
 function App() {
-	return element
+	return (
+		<div>
+			<Welcome name="John" />
+			<Welcome name="Jack" />
+			<Welcome name="Josh" />
+		</div>
+	);
 }
 
 export default App;
