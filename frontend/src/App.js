@@ -27,8 +27,9 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				{this.state.data.map(item =>
-					<ListItem 	title={item.title} 
+				{this.state.data.map((item, index) =>
+					<ListItem 	key={index} 
+								title={item.title} 
 								priority={item.priority} />)}
 			</div>
 		);
