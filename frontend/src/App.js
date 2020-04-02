@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { ListItem } from './components/listItem';
 
 class App extends Component {
 	constructor(props) {
@@ -28,10 +28,8 @@ class App extends Component {
 		return (
 			<div className="App">
 				{this.state.data.map(item =>
-					<div>
-						{item.title}
-					</div>
-				)}
+					<ListItem 	title={item.title} 
+								priority={item.priority} />)}
 			</div>
 		);
 	}
