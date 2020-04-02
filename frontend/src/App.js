@@ -1,26 +1,32 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends React.Component {
+const data = [
+	{
+		title: 'Work 1',
+		priority: 1,
+	},
+	{
+		title: 'Study 2',
+		priority: 10,
+	},
+	{
+		title: 'Sleep 3',
+		priority: -10,
+	}
+];
+
+class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-				Learn React
-				</a>
-			</header>
-		</div>
+				{data.map(item =>
+					<div>
+						{item.title}
+					</div>
+				)}
+			</div>
 		);
 	}
 }
