@@ -9,43 +9,29 @@ class App extends Component {
 		this.state = {
 			 data: [
 				{
+					id: 1,
 					title: 'Work 1',
 					priority: 1,
 				},
 				{
+					id: 2,
 					title: 'Study 2',
 					priority: 10,
 				},
 				{
+					
+					id: 3,
 					title: 'Sleep 3',
 					priority: -10,
 				},
 				{
+					id: 4,
 					title: 'Work 4',
 					priority: 1,
 				},
 				{
+					id: 5,
 					title: 'Study 5',
-					priority: 10,
-				},
-				{
-					title: 'Work 6',
-					priority: 1,
-				},
-				{
-					title: 'Study 7',
-					priority: 10,
-				},
-				{
-					title: 'Sleep 8',
-					priority: -10,
-				},
-				{
-					title: 'Work 9',
-					priority: 1,
-				},
-				{
-					title: 'Study 10',
 					priority: 10,
 				},
 			]
@@ -64,7 +50,7 @@ class App extends Component {
 		return (
 			<div className="App">
 				{this.state.data.map((item, index) =>
-					<ListItem 	key={index} 
+					<ListItem 	key={item.id} 
 								title={item.title} 
 								onRemove={() => this.removeElem(index)} 
 								priority={item.priority} />)}

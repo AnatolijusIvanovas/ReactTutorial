@@ -17,13 +17,13 @@
 	padding: 1rem;
 	box-sizing: border-box;
 	margin-bottom: 1rem;
-	background: #aabbcc;
+	background: #0ff;
 	border-radius: 2,5rem;
 	transition-duration: 0.3s;
 	cursor: pointer;
 }
 
 .list-item-checked:hover {
-	background: #112233;
+	background: #00f;
 	color: #fff;
 }
