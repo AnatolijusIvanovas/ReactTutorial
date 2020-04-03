@@ -1,0 +1,29 @@
+.list-item {
+	padding: 1rem;
+	box-sizing: border-box;
+	margin-bottom: 1rem;
+	background: #abcdef;
+	border-radius: 2,5rem;
+	transition-duration: 0.3s;
+	cursor: pointer;
+}
+
+.list-item:hover {
+	background: #123456;
+	color: #fff;
+}
+
+.list-item-checked {
+	padding: 1rem;
+	box-sizing: border-box;
+	margin-bottom: 1rem;
+	background: #aabbcc;
+	border-radius: 2,5rem;
+	transition-duration: 0.3s;
+	cursor: pointer;
+}
+
+.list-item-checked:hover {
+	background: #112233;
+	color: #fff;
+}
