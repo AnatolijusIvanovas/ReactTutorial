@@ -8,6 +8,12 @@ export class ListItem extends React.Component {
 		this.state = {
 			checked: false,
 		}
+		
+		this.changeChecked = this.changeChecked.bind(this);
+	}
+	
+	changeChecked() {
+		this.setState({checked: !this.state.checked})
 	}
 	
 	render() {
@@ -15,7 +21,7 @@ export class ListItem extends React.Component {
 			<div className={this.state.checked ? 
 				'list-item-checked' : 
 				'list-item'}
-				onClick={() => this.setState({checked: !this.state.checked})}>
+				onClick={this.changeChecked}>
 				{this.props.title} {this.props.priority}
 			</div>
 		)
