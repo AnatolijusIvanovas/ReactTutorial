@@ -48,7 +48,9 @@ class App extends Component {
 	
 	render() {
 		return (
+			console.log(this.props),
 			<div className="App">
+				{this.props.match.params.id}
 				{this.state.data.map((item, index) =>
 					<ListItem 	key={item.id} 
 								title={item.title} 
